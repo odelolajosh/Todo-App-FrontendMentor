@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="./styles/variable.css" rel="stylesheet" />
+  <link href="./styles/drag.css" rel="stylesheet" />
+  <link href="./styles/main.css" rel="stylesheet" />
+
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="bg--bx">
+    <img src="./images/bg-desktop-light.jpg" alt="background" />
+  </div>
+  </div>
+  <div class="todo--bx">
+    <header>
+      <h1>TODO</h1>
+      <span id="theme-toggle">
+        <img src="./images/icon-moon.svg" />
+      </span>
+    </header>
+
+    <!-- Todo input -->
+    <div class="todo-input--bx">
+      <div class="todo-input--chk">
+        <span class="checkbx idle"></span>
+      </div>
+      <input type="text" placeholder="Create a new todo..." />
+    </div>
+
+    <!-- Todo items container -->
+    <div class="todo-item--bx">
+      <div class="todos">
+        <div class="todo-item completed">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>Complete online Javascript course</span>
+        </div>
+        <div class="todo-item">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>Jog around the park 3x</span>
+        </div>
+        <div class="todo-item">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>10 minutes meditation</span>
+        </div>
+        <div class="todo-item">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>Read for 1 hour</span>
+        </div>
+        <div class="todo-item">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>Pick up groceries</span>
+        </div>
+        <div class="todo-item">
+          <span class="todo-chk">
+            <span class="checkbx--bx">
+              <input type="checkbox" />
+              <span class="checkbx">
+              </span>
+            </span>
+          </span>
+          <span>Complete Todo App on Frontend Mentor</span>
+        </div>
+      </div>
+
+    <!-- Todo overview -->
+    <div class="todo-ovw">
+      <span class="todo-count">5 items left</span>
+      <div class="todo-list-state">
+        <span data-action="all" class="active">All</span>
+        <span data-action="active">Active</span>
+        <span data-action="completed">Completed</span>
+      </div>
+      <span class="clear-completed">Clear Completed</span>
+    </div>
+  </div>
+
+  <!-- Mobile overview -->
+  <div class="todo-mobile-ovw">
+    <span data-action="all" class="active">All</span>
+    <span data-action="active">Active</span>
+    <span data-action="completed">Completed</span>
+  </div>
+
+  <div class="drag-n-drop">
+    Drag and drop to reorder list
+  </div>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <!-- Link to the script -->
+  <script src="./script/theme.js"></script>
+  <script src="./script/todo.js"></script>
+  <script src="./script/drag.js"></script>
+  <script src="./script/app.js"></script>
+</body>
+</html>
